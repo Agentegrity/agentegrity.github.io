@@ -4,7 +4,7 @@ Marketing site for **Agentegrity** — _structural integrity for intelligent age
 
 > Agentegrity (agent + integrity) is the discipline of building AI agents that can defend, stabilize, and recover themselves — and then cryptographically verifying that they actually can.
 
-🔗 **Live site:** https://cogensec.github.io/agentegrity.github.io/
+🔗 **Live site:** https://agentegrity.github.io/
 
 ## About this repo
 
@@ -29,16 +29,28 @@ python3 -m http.server 8080
 # then visit http://localhost:8080
 ```
 
-## Publishing with GitHub Pages
+## Publishing at `https://agentegrity.github.io/`
 
-1. Push these files to the branch GitHub Pages serves from (typically `main`).
-2. In **Settings → Pages**, set **Source** to *Deploy from a branch* and pick that branch with the `/ (root)` folder.
-3. The site builds and serves within a minute or two.
+GitHub serves a repository at `https://<account>.github.io/` only when the repo is named
+`<account>.github.io` **and** is owned by an account named `<account>`. To reach the root
+domain `https://agentegrity.github.io/`, this repo must live under a GitHub account named
+`agentegrity` (the name is currently unregistered):
+
+1. Create a GitHub **organization** named `agentegrity` (a free org is fine).
+2. **Transfer** this repository into it (repo *Settings → General → Transfer ownership*), or
+   create a new `agentegrity.github.io` repo there and push these files. The repo path
+   becomes `agentegrity/agentegrity.github.io`.
+3. Put the site on the **`main`** branch.
+4. In **Settings → Pages**, set **Source** to *Deploy from a branch* → `main` / `/ (root)`.
+5. The site builds and serves at `https://agentegrity.github.io/` within a minute or two.
+
+> While it stays under the `cogensec` org, GitHub publishes it as a project site at
+> `https://cogensec.github.io/agentegrity.github.io/` instead.
 
 ### Custom domain (optional)
 
-To serve from a custom domain, add a `CNAME` file containing the domain (e.g. `agentegrity.cogensec.com`)
-and create the matching DNS record with your provider.
+To serve from your own domain instead, add a `CNAME` file containing the domain
+(e.g. `agentegrity.cogensec.com`) and create the matching DNS record with your provider.
 
 ## License
 
