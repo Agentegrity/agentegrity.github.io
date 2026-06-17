@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Agentegrity</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070a0f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 5 L43 41 L5 41 Z' fill='none' stroke='%233b9bff' stroke-width='2.8' stroke-linejoin='round'/%3E%3Cpath d='M15 41 L24 26 L33 41' fill='none' stroke='%233b9bff' stroke-width='2.8' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='21' r='4.6' fill='%233b9bff'/%3E%3C/svg%3E">
+<style>
+  :root{--bg:#070a0f;--card:#0c111a;--text:#e9edf4;--muted:#9aa4b4;--muted-3:#7e8799;--faint:#5d6675;--line:rgba(255,255,255,0.07);--line-2:rgba(255,255,255,0.1);}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;
+    background:radial-gradient(ellipse 700px 460px at 82% -8%,rgba(59,155,255,0.18),transparent 62%),radial-gradient(ellipse 560px 520px at 6% 26%,rgba(138,125,255,0.12),transparent 60%),var(--bg);
+    color:var(--text);font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,0.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.022) 1px,transparent 1px);
+    background-size:66px 66px;-webkit-mask-image:radial-gradient(ellipse 100% 80% at 50% 0%,#000,transparent 72%);mask-image:radial-gradient(ellipse 100% 80% at 50% 0%,#000,transparent 72%)}
+  main{position:relative;z-index:1}
+  .logo{display:flex;align-items:center;justify-content:center;gap:13px;margin-bottom:34px}
+  .logo span{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+  .code{font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.2em;color:var(--faint);margin-bottom:18px}
+  .code b{color:#3b9bff;font-weight:500}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-0.03em;font-weight:600;margin:0 0 16px}
+  h1 .blue{color:#3b9bff}
+  p{color:var(--muted);max-width:44ch;margin:0 auto 32px;line-height:1.6;font-size:16px}
+  a.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 23px;border-radius:999px;background:#f3f1ea;color:#0a0d12;font-weight:600;font-size:16px;text-decoration:none;border:1px solid #f3f1ea;transition:background .2s ease}
+  a.btn:hover{background:#fff}
+</style>
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <svg width="34" height="34" viewBox="0 0 48 48" fill="none"><path d="M24 5 L43 41 L5 41 Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"></path><path d="M15 41 L24 26 L33 41" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round" fill="none"></path><circle cx="24" cy="21" r="4.6" fill="#3b9bff"></circle></svg>
+      <span>agentegrity</span>
+    </div>
+    <div class="code"><b>●</b> ERR 404 · ATTESTATION_NOT_FOUND</div>
+    <h1>This path can't be <span class="blue">verified.</span></h1>
+    <p>The page you're looking for has no signed record — it may have moved, or never existed on the chain.</p>
+    <a class="btn" href="/">Return to known-good
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+    </a>
+  </main>
+</body>
+</html>
